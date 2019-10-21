@@ -1,0 +1,109 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.progress {
+    border: 1px solid #ddd;
+    height: 15px;
+}
+
+.bar {
+    width: 0;
+    height: 100%;
+    background-color: #ff0;
+}
+
+.time-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-row {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+}
+
+.container {
+    margin:0 auto;
+    width:1200px;
+}
+
+#playList {
+    border:1px solid #ddd;
+    border-radius: 6px;
+    padding:20px;
+}
+
+#playList .item-list {
+    display:grid;
+    grid-gap:10px;
+    grid-auto-rows: 40px;
+    margin-bottom:10px;
+    min-height: 300px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding:10px;
+}
+
+#playList .item {
+    width:100%;
+    color:#fff;
+    background-color: #5c6bc0;
+    padding:8px 12px;
+    border-radius: 0.25rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size:14px;
+    user-select: none;
+}
+
+#playList .item.active {
+    background-color: #9575cd;
+}
+
+.control {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#audioFile {
+    visibility: hidden;
+}
+
+.visualizer {
+    height:300px;
+}
+
+
+#context {
+    position: fixed;
+    top:0;
+    left:0;
+    visibility: hidden;
+    width:100px;
+    background-color: #fff;
+    border-radius:5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+#context > li:hover {
+    background-color: #3f3fff;
+    color:#fff;
+}
+
+#context > li {
+    padding:8px 12px;
+    border-bottom:1px solid #ddd;
+}
+#context > li:last-child {
+    border-bottom:0;
+}

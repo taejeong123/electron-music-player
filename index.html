@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>뮤직 플레이어</title>
+    <script src="dist/app.js"></script>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-row">
+            <div id="player">
+                <div class="info">
+                    <div class="audio-info">
+                        <div class="file-name">재생할 음악이 없습니다.</div>
+                    </div>
+                    <div class="time-info">
+                        <span class="current-time">00:00:00</span>
+                        <span class="total-time">00:00:00</span>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="bar"></div>
+                </div>
+                <audio src=""></audio>
+                <div class="control">
+                    <div class="control-btn">
+                        <button class="play">재생</button>
+                        <button class="stop">정지</button>
+                    </div>
+                    <div class="mode-btn">
+                        <input type="radio" name="repeat" class="repeat-btn" value="0" checked>반복없음
+                        <input type="radio" name="repeat" class="repeat-btn" value="1">한곡반복
+                        <input type="radio" name="repeat" class="repeat-btn" value="2">리스트반복
+                    </div>
+                </div>
+                <div class="visualizer">
+                    <canvas id="vCanvas"></canvas>
+                </div>
+            </div> <!-- end of player -->
+
+            <div id="playList">
+                <ul class="item-list">
+                    <li class="item active">sample4.mp3</li>
+                    <li class="item">sample4.mp3</li>
+                    <li class="item">sample4.mp3</li>
+                    <li class="item">sample4.mp3</li>
+                </ul>
+                <div class="button-row">
+                    <button id="openDialog">추가</button>
+                    <input type="file" id="audioFile" multiple>
+                </div>
+            </div> <!-- end of playList -->
+
+        </div> <!-- end of main-row -->
+    </div> <!-- end of container -->
+
+    <ul id="context">
+        <li id="del">삭제</li>
+        <li>더미</li>
+    </ul>
+</body>
+
+</html>

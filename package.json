@@ -1,0 +1,26 @@
+{
+  "name": "player",
+  "version": "1.0.0",
+  "description": "응프 화면구현 js로 만드는 뮤직 플레이어",
+  "main": "PlayList.js",
+  "scripts": {
+    "start": "electron index.js",
+    "watch": "webpack --watch --progress",
+    "prod": "webpack --mode=production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "asar": "^2.0.1",
+    "css-loader": "^3.2.0",
+    "electron": "^6.0.12",
+    "electron-packager": "^14.0.6",
+    "mini-css-extract-plugin": "^0.8.0",
+    "style-loader": "^1.0.0",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "webpack": "^4.41.2"
+  }
+}
