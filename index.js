@@ -1,4 +1,5 @@
 const {app, BrowserWindow, ipcMain} = require('electron');
+const path = require('path');
 
 //일렉트론 앱의 환경설정 변수 [JSON]
 const props = {
@@ -9,7 +10,8 @@ const props = {
         nodeIntegration:true,
         nativeWindowOpen: true,
         nodeIntegrationInWorker: true   //js 의 쓰레드 : worker
-    }
+    },
+    icon: path.join(__dirname, "img/icon.ico")
 }
 
 let win = null;

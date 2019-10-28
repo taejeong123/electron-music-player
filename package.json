@@ -2,11 +2,12 @@
   "name": "player",
   "version": "1.0.0",
   "description": "응프 화면구현 js로 만드는 뮤직 플레이어",
-  "main": "PlayList.js",
+  "main": "index.js",
   "scripts": {
     "start": "electron index.js",
     "watch": "webpack --watch --progress",
-    "prod": "webpack --mode=production"
+    "prod": "webpack --mode=production",
+    "x64build": "electron-packager . player --asar --platform=win32 --arch=x64 --out=dist64 --overwrite"
   },
   "keywords": [],
   "author": "",
